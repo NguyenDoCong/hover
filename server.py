@@ -22,7 +22,7 @@ def receive_hover(data: HoverData):
     print("Crawling data...")
     crawled_data = crawl(data.href)
     print("Crawled data:", crawled_data)
-    return {crawled_data}
+    return {"result": crawled_data}
     # return {"received": data.href}
 
 if __name__ == "__main__":

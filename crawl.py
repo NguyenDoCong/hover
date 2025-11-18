@@ -17,7 +17,7 @@ def crawl(url):
     client = genai.Client()
 
     response = client.models.generate_content(
-        model="gemini-2.5-flash", contents=f"Tóm tắt thông tin sau trong 100 từ: {text}"
+        model="gemini-2.0-flash", contents=f"Tóm tắt thông tin sau trong 50 từ: {text}"
     )
     return(response.text)
 
